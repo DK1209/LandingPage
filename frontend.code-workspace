@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "../../kube-mogi/ai/ai-video/frontend"
+		}
+	],
+	"settings": {
+		"files.associations": {
+			"*.ejs": "html",
+			"iostream": "cpp"
+		}
+	}
+}
