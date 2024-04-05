@@ -3,8 +3,7 @@ import { Inter } from 'next/font/google'
 import './globals.css'
 
 // Redux setup
-import { Providers } from "@/Redux/provider"
-import Header from '@/components/Header'
+import { Provider } from "react-redux"
 import { ToastContainer } from 'react-toastify'
 
 const inter = Inter({ subsets: ['latin'] })
@@ -23,7 +22,7 @@ export default function RootLayout({
     <html lang="en">
 
       <body className={`${inter.className} bg-black`}>
-        <Providers>
+        <Provider>
           <ToastContainer
             position="top-center"
             autoClose={2000}
@@ -38,8 +37,9 @@ export default function RootLayout({
           <main className='min-h-[100vh] flex flex-col gap-1 bg-black text-white'>
             {children}
           </main>
-        </Providers>
+        </Provider>
       </body>
     </html>
   )
 }
+
